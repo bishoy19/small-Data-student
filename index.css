@@ -1,0 +1,86 @@
+body {
+  margin: 70px auto;
+  font-family: Andalus;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: lightGrey;
+  max-width: 100vw;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+@keyframes moveNotification {
+  0% {
+    top: -2.2rem;
+  }
+  50% {
+    top: 0.1rem;
+  }
+  100% {
+    top: -2.2rem;
+  }
+}
+h3 {
+  position: absolute;
+  top: -2.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 2rem;
+  color: #d8000c;
+  background-color: #ffbaba;
+  padding: 0 0.2rem;
+  border: 1px solid;
+  transition: 0.3s linear;
+}
+.show-error-notification {
+  /* animation: moveNotifiation 3s ease-in; */
+  top: 0.1rem;
+  transition: 0.5s linear;
+}
+.close-notification {
+  cursor: pointer;
+}
+
+.error-notification {
+  margin-left: 0.5rem;
+}
+.error-msg {
+  color: red;
+  display: none;
+}
+.show {
+  display: block;
+}
+[type="text"],
+[type="button"] {
+  font-family: "Century Gothic";
+  font-size: large;
+}
+table {
+  width: 80%;
+  margin: 7rem auto;
+  border: 2px solid #eee;
+}
+td {
+  border: 2px solid #eee;
+}
+.students-table td {
+  text-align: center;
+}
+.fa-trash-can {
+  color: red;
+  cursor: pointer;
+}
+.SD {
+  background-color: lightpink;
+}
+
+.OS {
+  background-color: lightyellow;
+}
+
+.EL {
+  background-color: lightskyblue;
+}

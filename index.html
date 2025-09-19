@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Lab4 Task1</title>
+  </head>
+  <body>
+    <h3>
+      <i class="fa-solid fa-circle-xmark close-notification"></i
+      ><span class="error-notification">hey karim!</span>
+    </h3>
+    <form>
+      <table>
+        <tr>
+          <td>Department:</td>
+          <td>
+            <input type="radio" name="Department" value="SD" checked />SD
+            <input type="radio" name="Department" value="OS" />OS
+            <input type="radio" name="Department" value="EL" />EL
+          </td>
+        </tr>
+        <tr>
+          <td>StudentName</td>
+          <td><input type="text" name="studentName" /></td>
+          <td><span class="error-msg" id="nameError">Required</span></td>
+        </tr>
+        <tr>
+          <td>StudentGrade</td>
+          <td><input type="text" name="studentGrade" /></td>
+          <td>
+            <span class="error-msg" id="gradeError">should be number</span>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="button" value="Add" class="add-button" /></td>
+        </tr>
+        <tr>
+          <td>Sort</td>
+          <td>
+            <select class="sort-parameter">
+              <option value="name">Name</option>
+              <option value="grade">Grade</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Filter:</td>
+          <td>
+            <select class="filter-parameter">
+              <option selected value="all">All</option>
+              <option value="success">Success</option>
+              <option value="fail">Fail`</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+      <table class="students-table"></table>
+    </form>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
